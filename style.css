@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  background-color: cadetblue;
+  padding: 1rem;
+}
+.box:nth-of-type(2) {
+  background-color: rgb(228, 194, 153);
+}
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background-color: darksalmon;
+  }
+}
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .box {
+    padding: 0.5cm;
+  }
+}
